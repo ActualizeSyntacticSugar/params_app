@@ -21,4 +21,17 @@ class Api::GamesController < ApplicationController
     end
     render "query_guess.json.jb"
   end
+
+  def segment_guess_method
+    winning_number = 32
+    input_guess = params["guess"].to_i
+    if input_guess == winning_number
+      @result = "You win!"
+    elsif input_guess < winning_number
+      @result = "You lose! (too low)"
+    elsif input_guess > winning_number
+      @result = "You lose! (too high)"
+    end
+    render "segment_guess.json.jb"
+  end
 end
