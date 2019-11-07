@@ -4,4 +4,9 @@ class Api::ParamsExamplesController < ApplicationController
     @sheep = params["sheep"]
     render "query_params.json.jb"
   end
+
+  def segment_params_method
+    @message = params["this_is_a_variable"]
+    render "segment_params.json.jb"
+  end
 end
