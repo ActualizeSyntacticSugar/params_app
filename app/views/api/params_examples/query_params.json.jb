@@ -1,0 +1,4 @@
+{
+  message: "yo the size is #{@size}",
+  message2: "are the sheep here? #{@sheep}",
+}
