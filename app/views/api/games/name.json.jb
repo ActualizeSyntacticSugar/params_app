@@ -1,0 +1,4 @@
+{
+  message: "Your name is #{@name}",
+  message2: @message,
+}
