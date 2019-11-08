@@ -1,0 +1,4 @@
+{
+  message: "Yod",
+  secret_message: "Shh...the secret is #{@secret_stuff}",
+}
