@@ -21,4 +21,15 @@ class Api::GamesController < ApplicationController
     end
     render "query_guess.json.jb"
   end
+
+  def secret_stuff_method
+    username = params["username"]
+    password = params["password"]
+    if username == "hugh" && password == "swordfish"
+      @message = "Valid"
+    else
+      @message = "Invalid"
+    end
+    render "secret_stuff.json.jb"
+  end
 end

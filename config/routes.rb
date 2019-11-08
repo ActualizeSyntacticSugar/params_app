@@ -8,5 +8,6 @@ Rails.application.routes.draw do
     get "/query_guess_url" => "games#query_guess_method"
     get "/segment_guess_url/:guess" => "games#query_guess_method"
     post "/body_guess_url" => "games#query_guess_method"
+    post "/secret_stuff_url" => "games#secret_stuff_method"
   end
 end
